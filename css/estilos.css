@@ -1,4 +1,3 @@
-/*ejemplo momentaneos */
 
 *{
     box-sizing: border-box;
@@ -121,11 +120,7 @@ span{
 }
 
 
-/**
-#contactar {
-padding-left: 525px;
-}
-"margin: 0 auto" **/
+
 
 #boton {
     float: right;
