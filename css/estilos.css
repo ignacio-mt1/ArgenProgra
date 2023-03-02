@@ -1,0 +1,262 @@
+/*ejemplo momentaneos */
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+body{
+background-image: url(fond1.jpg);
+background-size:cover
+
+}
+
+nav { 
+    font-family: 'Vollkorn', serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center ;
+    padding: 2.1rem 1rem;
+    background-color: var(--color-2);
+    color:darkslategrey;
+    font-weight:bolder;
+    font-size:xx-large;
+
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+
+}
+nav ul li a{
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 1rem;
+    font-size: 0.73em
+}
+
+
+nav ul li:hover {
+    background: #fff;
+    border-radius: 70px;
+  }
+
+
+#fotoPerfil{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+#nom {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 4.5em;
+    color:black;
+    
+}
+
+
+.bloq-sobre {
+    padding: 95px 50px 46px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table-cell;
+    width: 33.3333%;
+}
+
+
+span{
+    color: black;
+    font-weight: bold;
+}
+
+
+
+.rating {
+    margin-top: -6px;
+}
+
+.rating span.transparent {
+    opacity: 0.1;
+    background: #888888;
+}
+
+.rating span {
+    width: 30px;
+    background: #199cdb;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+
+
+#hab {
+    padding-left: 100px;
+}
+
+#idiom {
+    padding-left: 100px;
+}
+
+#ultimo {
+    font-family: 'Vollkorn', serif;
+    font-weight: bold;
+}
+
+
+/**
+#contactar {
+padding-left: 525px;
+}
+"margin: 0 auto" **/
+
+#boton {
+    float: right;
+    border: 0;
+    background:fixed;
+    font-weight: bold;
+    font-size:150%;
+    font-family: 'Vollkorn', serif;
+    
+}
+
+
+
+
+
+.go-top-container{
+    position:fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: -1;
+}
+
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background: #2071b2;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.go-top-button i {
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: 0.2s;
+}
+
+.show {
+    z-index: 10;
+}
+
+.show .go-top-button {
+    animation: popup 0.3s ease-in-out;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: 11;
+}
+
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+@keyframes popup {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50%{
+        width: 8rem;
+        height: 8rem;
+    }
+    100%{
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+}
+
+.btn {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255,0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+     
+
+form {
+    background-color: white;
+    color: #999;
+    padding: 20px;
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 7px;
+    font-size: 0.8em;
+    font-weight: bold;
+
+}
+
+input, textarea{
+    outline: none;
+    border: 0;
+    width: 250px;
+
+}
+
+.field{
+    border: solid 1px #ccc;
+    padding: 10px;
+    
+
+}
+
+.field:focus{
+    border-color: aqua;
+
+}
+
+.center-content {
+     text-align: center;
+}
+
+#consul {
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color:dimgrey;
+    font-weight: bold;
+    text-align: center;
+    font-style:italic;
+    text-decoration: underline 3px;
+
+}
